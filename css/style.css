@@ -1,0 +1,448 @@
+:root{
+    --primary-color: #917758;
+    --secondary-color: #3C2915;
+    --terciary-color: #f5eee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container  {
+    width: 1170px;
+    margin: 0 auto;
+}
+/**************************************
+            HOME  - MENU
+***************************************/
+.home{
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/bg-home.jpg");
+    background-size: cover;
+    /* "Efeito parallax" */
+    background-attachment: fixed;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+    
+.home .header .navbar{
+    display: flex;
+    justify-content: center;
+}
+.home .header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+.home .header .navbar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 150px;
+}
+.home .header .navbar ul li a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.home .header .navbar ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+.home .header .navbar ul li .logo {
+    margin: 0 30px;
+}
+
+/**********************************
+         HOME  - BANNER
+**********************************/
+
+.home .banner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    text-align: center;
+    width: 765px;
+    height: 258px;
+    margin-left: -382.5px;
+    margin-top: -91px;
+}
+.home .banner span{
+    display: block;
+}
+.home .banner .bn-top {
+    color: var(--primary-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.home .banner h1{
+    font-weight: 700;
+    font-size: 120px;
+}
+.home .banner .bn-bottom {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+/***********************************
+             ABOUT
+************************************/
+.about {
+    background-color: var(--primary-color);
+}
+.about .container {
+    display: flex;
+}
+/*************************************
+            ABOUT - TIME
+**************************************/
+.about .time {
+    width: 33%;
+    padding: 20px;
+    background-image: url("../images/brush-big.jpg");
+    position: relative;
+    top: -50px;
+}
+.about .container .time .overlay   {
+    padding: 20px 40px;
+    background: rgba(0,0,0, 0.7);
+    text-align: center;
+}
+.about .container .time .overlay .icon-cut {
+    width: 50px;
+}
+.about .container .time .overlay h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+.about .container .time .overlay .text {
+    margin: 10px 0;
+}
+.about .container .time .overlay .text:after {
+    content: '•';
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+.about .container .time .overlay .text:last-of-type:after{
+    content: "|";
+}
+.about .container .time .overlay .text h4 {
+    font-weight: 400;
+    color: rgb(126, 123, 123);
+}
+.about .container .time span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+/****************************
+    ABOUT - EXPERIENCE
+ ***************************/
+.about .experience {
+    width: 66%;
+    margin-top: 100px;
+    margin-left: 7%;
+    color: white;
+}
+.about .experience span {
+    display: block;
+    font-weight: normal;
+}
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: white;
+    margin:20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+.about .experience .text p {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 17px;
+}
+/*******************************************
+                SERVICES
+*******************************************/
+.services {
+    background-color: var(--terciary-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2  {
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+.services .container img {
+    padding-top: 15px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.services .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+/**********************************************
+                SERVICES - BOX
+**********************************************/
+
+.services .container .box {
+    display: flex;
+    padding: 50px 40px;
+    margin: 30px;
+    border: 3px solid var(--primary-color);
+    flex-direction: column;
+    align-items: center ;
+    justify-content: flex-start;
+    color: var(--secondary-color);
+}
+
+.services .container .box h4 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+.services .container .box p {
+    font-size: 14px;
+    padding-top: 30px 0;
+    line-height: 25px;
+}
+
+.services .container .box .cut {
+    width: 70px;
+    padding: 30px 0;
+}
+.services .container .box .shaver{
+    width: 27px;
+    padding: 30px 0;
+}
+
+.services .container .box .img-heading {
+    width: 35px;
+    padding: 10px 0;
+}
+
+/************************************************
+                    SCHEDULING
+************************************************/
+
+.scheduling{
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding: 80px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+.scheduling h2  {
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    color: var(--terciary-color);
+}
+.scheduling .container img {
+    padding-top: 15px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+/***************************************************
+                SCHEDULING - FORM
+***************************************************/
+
+.scheduling form {
+    margin-top: 80px;
+}
+.scheduling .personal-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.scheduling .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.scheduling .input-wrapper:last-of-type {
+    width: 100%;
+    margin-right: 0;
+}
+
+.scheduling label {
+    display: block;
+    font-size: 14px;
+    color: var(--terciary-color);
+    margin-bottom: 5px;
+}
+.scheduling  input, .scheduling  select, .scheduling  textarea   {
+    padding: 10px 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.scheduling  textarea {
+    height: 100px;
+}
+.scheduling  button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/********************************************
+                    GALLERY
+********************************************/
+
+.gallery {
+    background-color: var(--terciary-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.gallery h2  {
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    color: var(--primary-color);
+}
+.gallery .container img {
+    padding-top: 15px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+/***************************************************
+                GALLERY-WRAPPER
+***************************************************/
+
+.gallery .gallery-wrapper {
+    /*Aplicando display flex com wrap para limitar altura e largura para conter as imagens e garantir que elas não ultrapassem o container*/
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    width: 900px;
+    margin: 50px auto;
+}
+.gallery .gallery-wrapper div {
+    /* Imagem dentro de uma div para não distorcer as imagens */
+    border: 10px solid var(--primary-color);
+    margin: 6px;
+    width: 33%;
+}
+.gallery .gallery-wrapper div img {
+    /* definir altura para que elas caibam dentro da div */
+    width: 100%;
+    padding: 0;
+    /* Imagens com padding por padrão, precisei zerar eles */
+}
+
+/******************************************************
+                    LOCATION
+*******************************************************/
+
+.location{
+    background-image: url(../images/bg-location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    /* alinhando a imagem no centro da div, com a borda */
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    padding: 10px;
+    /*Definir altura e largura para garantir o mesmo tamanho de imagem para todos*/
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+.location .head .info .text span:last-child {
+    color: white;
+}
+.location .map {
+    width: 100%;
+}
+.location .map iframe {
+    width: 100%;
+}
+
+/******************************************************
+                    FOOTER
+*******************************************************/
+.footer{
+    background-color: #252222;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
